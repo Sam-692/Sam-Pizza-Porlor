@@ -1,0 +1,70 @@
+header{
+    background-image: url(https://bit.ly/3cga6Hc);
+    height: 50%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.col-md-4{
+    border-radius: 12px;
+    border: 5px solid yellow;
+    padding: 20px;
+    border-collapse: separate;
+    border-spacing: 115px 200px;
+}
+.greatnav {
+    padding-top: 50px;
+    text-align: center;
+    text-decoration: none;
+    right: 0;
+    left: 0;
+    color: yellow;
+    background-color: transparent;
+}
+                
+li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+li>a {
+    text-decoration: none;
+    padding: 15px;
+    margin: 0;
+    display: block;
+    text-transform: uppercase;
+    color:blue;
+    text-shadow: 0 0 10px red;
+    background-color: gainsboro;
+    border-radius: 17px;
+}
+
+a:hover {
+    box-shadow: 0 0 10px yellow;
+    color: purple;
+    text-decoration: none;
+    background-color: tomato;
+}
+
+.logo {
+    padding-top: 100px;
+}
+
+#log1 {
+    border-radius: 50%;
+}
+.pizza-name{
+    text-align: right;
+    font-family: 'Molle';
+    font-size: 50px;
+    color: green;
+}
+#pizza-name-h1{
+    font-family: 'Creepster' ;
+    font-size: 100px;
+    color: yellow;
+}
+#order-icon{
+    height: 122px;
+    width: 100px;
+}

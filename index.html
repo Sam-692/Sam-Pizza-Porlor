@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Inn</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="https://bit.ly/2wSop4O">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Creepster|Molle:400i|Monofett&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="intro">
+            <nav class="greatnav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+
+                    <li> <a href="menu.html"> Our Menu</a></li>
+
+                    <li> <a href="contact.html">Contact Us</a></li>
+
+                </ul>
+            </nav> <br><br><br><br>
+            <div class="pizza-name">
+                <img src="https://bit.ly/2I2xbzj" alt="logo" width="150" height="120" id="log1"><br><br>
+                <h1 id="pizza-name-h1">Manger Une Pizza</h1><br>
+                <p id="state">We give you what you want</p>
+            </div>
+        </div>
+        <p></p>
+    </header><br><br><br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="https://bit.ly/3adkEp4" id="order-icon" alt="">
+                        <p>Make as many orders as you can depending on your pocket</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div id="sam" class="card">
+                    <img class="card-img-top" src="https://bit.ly/2T44s3J" alt="pizza image" style="height: 352px;">
+                    <div class="card-body">
+                      <h4 class="card-title">Pepperoni Pizza</h4>
+                      <p class="card-text">it is type of pizza made from cured pork and beef mixed together and seasoned with paprika</p>
+                      <a href="#order" class="btn btn-warning">Order</a>
+                    </div>
+                 </div>
+             </div>
+             <div class="col-md-4">
+                <div id="samy" class="card">
+                    <img class="card-img-top" src="https://bit.ly/2HXpc6I" alt="pizza image" style="height: 352px;">
+                    <div class="card-body">
+                      <h4 class="card-title">Pepperoni Pizza</h4>
+                      <p class="card-text">it is type of pizza made from cured pork and beef mixed together and seasoned with paprika</p>
+                      <a href="#order" class="btn btn-warning">Order</a>
+                    </div>
+                 </div>
+             </div>
+             <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://bit.ly/2T6bWmO" alt="pizza image" style="height: 352px;">
+                    <div class="card-body">
+                      <h4 class="card-title">Pepperoni Pizza</h4>
+                      <p class="card-text">it is type of pizza made from cured pork and beef mixed together and seasoned with paprika</p>
+                      <a href="#order" class="btn btn-warning">Order</a>
+                    </div>
+                 </div>
+             </div>
+        </div>
+        <div class="col-sm-8 order-overlay text-center">
+                           <form id="order" class="col-sm-6 offset-sm-3 text-center">
+                               <label for="type">Pick your pizza Flavour:</label>
+                               <select id="" class="custom-select custom-select-md mb-3 flavour" required="">
+                                   <option value="400">Chicago</option>
+                                   <option value="500">Neapolitan</option>
+                                   <option value="6000">Detroit</option>
+                                   <option value="500">BBQ Steak</option>
+                                   <option value="400">St Louis</option>
+                                   <option value="50">Hawaiian</option>
+                               </select>
+                               <label for="sizes">Chose your preferred Size:</label>
+                               <select id="sizes" class="custom-select custom-select-md mb-3" required="">
+                                   <option value="500">Regular</option>
+                                   <option value="700">Medium</option>
+                                   <option value="1100">Large</option>
+                               </select>
+                               <label for="crusts">Choose your favorite Crust:</label>
+                               <select id="crusts" class="custom-select custom-select-md mb-3" required="">
+                                   <option value="200">Thin Crust @ Ksh. 100</option>
+                                   <option value="250">Thick Crust @ Ksh. 150</option>
+                                   <option value="380">FlatBread Crust @ sh. 180</option>
+                                   <option value="350">Custom Crust @ sh. 280</option>
+                               </select>
+                               <label for="toppings">Select Your favourite Toppings</label>
+                               <select id="toppings" class="custom-select custom-select-md mb-3" required="">
+                                   <option value="100">Tomato</option>
+                                   <option value="100">Onions</option>
+                                   <option value="100">Mushroom</option>
+                                   <option value="150">Olives</option>
+                                   <option value="150">Sausage</option>
+                                   <option value="200">Beef</option>
+                                   <option value="200">Chicken</option>
+                               </select>
+                               <label for="number">No. of Pizzas</label>
+                               <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" max="10" required="">
+                               <button type="submit" class="btn btn-danger checkout" id="order">Order</button>
+                           </form>
+       
+                       </div>
+                       </div>
+                    </div>
+</body>
+</html>
