@@ -8,14 +8,14 @@ header{
     background-color: tomato;
     
 }
-/* #col-md-4{
+#col-md-4{
     border-radius: 12px;
     padding: 20px;
     border-collapse: separate;
     border-spacing: 115px 200px;
     background-image: url();
 }
-.greatnav {
+/* .greatnav {
     padding-top: 50px;
     text-align: center;
     text-decoration: none;
