@@ -79,13 +79,13 @@ a:hover {
     font-family: 'Creepster' ;
     font-size: xx-large;
 }
-/* .order-taken-p, .card-text, .btn{
+.order-taken-p, .card-text, .btn{
     text-align: center;
     color: green;
     font-family: 'Molle';
     font-size: x-large;
 }
-.routine{
+/* .routine{
     text-align: center;
     font-size: 100px;
     color: yellow;
