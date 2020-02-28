@@ -15,7 +15,7 @@ header{
     border-spacing: 115px 200px;
     background-image: url();
 }
-/* .greatnav {
+.greatnav {
     padding-top: 50px;
     text-align: center;
     text-decoration: none;
@@ -29,7 +29,7 @@ li {
     list-style-type: none;
     display: inline-block;
 }
-
+/* 
 li>a {
     text-decoration: none;
     padding: 15px;
@@ -97,6 +97,6 @@ body{
     background-position: center;
     background-size: cover;
     page-break-after: auto;
-    padding: 29px; */
-}
+    padding: 29px;
+} */
 font-family: 'Monofett', ;
