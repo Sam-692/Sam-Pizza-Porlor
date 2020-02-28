@@ -73,13 +73,13 @@ a:hover {
     width: 150px;
     text-align: center;
 }
-/* .order-taken, .card-title{
+.order-taken, .card-title{
     text-align: center;
     color:yellow;
     font-family: 'Creepster' ;
     font-size: xx-large;
 }
-.order-taken-p, .card-text, .btn{
+/* .order-taken-p, .card-text, .btn{
     text-align: center;
     color: green;
     font-family: 'Molle';
