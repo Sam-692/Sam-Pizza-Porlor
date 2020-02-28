@@ -96,31 +96,31 @@
         </div><br><br><br><br>
         <p class="routine">Place an order as you wish</p>
         <div class="card">
-          <div class="card-body">
+          <div class="card-body" id="card-form">
             <!-- <div class="col-sm-8 order-overlay text-center"> -->
-            <form id="order" class="col-sm-6 offset-sm-3 text-center">
-                <label for="type">Pick your pizza Flavour:</label>
-                    <select id="" class="custom-select custom-select-md mb-3 flavour" required="">
+            <form id="order" class="col-sm-4 text-center">
+                <label class="pizza-label" for="type">Pick your pizza Flavour:</label>
+                    <select id="" class="custom-select custom-select-md mb-3" required="">
                     <option value="500">Neapolitan</option>
                     <option value="1000">Detroit</option>
                     <option value="500">BBQ Steak</option>
                     <option value="400">St Louis</option>
                     <option value="500">Hawaiian</option>
                     </select>
-                    <label for="sizes">Chose your preferred Size:</label>
+                    <label class="pizza-label" for="sizes">Chose your preferred Size:</label>
                     <select id="sizes" class="custom-select custom-select-md mb-3" required="">
-                    <option value="500">Regular</option>
+                    <option value="500">Small</option>
                     <option value="700">Medium</option>
                     <option value="1100">Large</option>
                     </select>
-                    <label for="crusts">Choose your favorite Crust:</label>
+                    <label class="pizza-label" for="crusts">Choose your favorite Crust:</label>
                     <select id="crusts" class="custom-select custom-select-md mb-3" required="">
                     <option value="200">Thin Crust @ Ksh. 100</option>
                     <option value="250">Thick Crust @ Ksh. 150</option>
                     <option value="380">FlatBread Crust @ sh. 180</option>
                     <option value="350">Custom Crust @ sh. 280</option>
                     </select>
-                    <label for="toppings">Select Your favourite Toppings</label>
+                    <label class="pizza-label" for="toppings">Select Your favourite Toppings</label>
                     <select id="toppings" class="custom-select custom-select-md mb-3" required="">
                     <option value="100">Tomato</option>
                     <option value="100">Onions</option>
@@ -130,8 +130,8 @@
                     <option value="200">Beef</option>
                     <option value="200">Chicken</option>
                     </select>
-                    <label for="number">No. of Pizzas</label>
-                    <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" max="10" required="">
+                    <label class="pizza-label" for="number">No. of Pizzas</label>
+                    <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" max="10" required=""> <br><br>
                     <button type="submit" class="btn btn-danger checkout" id="order">Order</button>
              </form>
             </div>
