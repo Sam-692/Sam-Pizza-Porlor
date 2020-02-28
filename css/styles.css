@@ -1,16 +1,19 @@
 header{
-    background-image: url(https://bit.ly/3cga6Hc);
+    background-image: url(https://bit.ly/2Vua20K);
+    border-radius: 50px;
     height: 50%;
     width: 100%;
     background-position: center;
     background-size: cover;
+    background-color: tomato;
+    
 }
-.col-md-4{
+/* #col-md-4{
     border-radius: 12px;
-    border: 5px solid yellow;
     padding: 20px;
     border-collapse: separate;
     border-spacing: 115px 200px;
+    background-image: url();
 }
 .greatnav {
     padding-top: 50px;
@@ -52,6 +55,7 @@ a:hover {
 
 #log1 {
     border-radius: 50%;
+    float: right;
 }
 .pizza-name{
     text-align: right;
@@ -64,7 +68,35 @@ a:hover {
     font-size: 100px;
     color: yellow;
 }
-#order-icon{
+.order-icon{
     height: 122px;
-    width: 100px;
+    width: 150px;
+    text-align: center;
 }
+.order-taken, .card-title{
+    text-align: center;
+    color:yellow;
+    font-family: 'Creepster' ;
+    font-size: xx-large;
+}
+.order-taken-p, .card-text, .btn{
+    text-align: center;
+    color: green;
+    font-family: 'Molle';
+    font-size: x-large;
+}
+.routine{
+    text-align: center;
+    font-size: 100px;
+    color: yellow;
+    font-family: 'Creepster' ;
+    text-decoration-line: underline;
+}
+body{
+    background-image: url(https://bit.ly/2Vu918L);
+    background-position: center;
+    background-size: cover;
+    page-break-after: auto;
+    padding: 29px; */
+}
+font-family: 'Monofett', ;
