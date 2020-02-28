@@ -48,7 +48,7 @@ a:hover {
     text-decoration: none;
     background-color: tomato;
 }
-/* 
+
 .logo {
     padding-top: 100px;
 }
@@ -67,7 +67,7 @@ a:hover {
     font-family: 'Creepster' ;
     font-size: 100px;
     color: yellow;
-}
+/* }
 .order-icon{
     height: 122px;
     width: 150px;
