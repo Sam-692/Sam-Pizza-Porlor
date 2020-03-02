@@ -107,4 +107,34 @@ body{
     font-family: 'Creepster';
     font-size: x-large;
 }
+.pizza-option{
+    color: green;
+    font-family: 'Molle';
+    font-size: x-large;
+}
+.pizza-options{
+    font-family: 'Molle';
+    font-size: x-large;
+    color: yellow;
+}
+.card-form{
+    background-color: white;
+}
+#card-order{
+    float: right;
+    text-align: center;
+    height: 400px;
+    width: 500px;
+    font-family: 'Creepster';
+    color:green;
+    font-size:20px;
+}
+#ordered-options, #checkout{
+    display: none;
+}
+#cart{
+    height: 10px;
+    width: 10px;
+    text-align: center;
+}
 font-family: 'Monofett', ;

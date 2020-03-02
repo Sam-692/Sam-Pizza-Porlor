@@ -97,42 +97,114 @@
         <p class="routine">Place an order as you wish</p>
         <div class="card">
           <div class="card-body" id="card-form">
-            <!-- <div class="col-sm-8 order-overlay text-center"> -->
-            <form id="order" class="col-sm-4 text-center">
-                <label class="pizza-label" for="type">Pick your pizza Flavour:</label>
-                    <select id="" class="custom-select custom-select-md mb-3" required="">
+              <div class="row">
+                  <div class="col-md-6">
+              <!-- <div class="col-sm-8 order-overlay text-center"> -->
+                <form id="order" class="text-center">
+                 <label class="pizza-label" for="type">Pick your pizza Flavour:</label>
+                    <!-- <select id="" class="custom-select custom-select-md mb-3 pizza-option" required="">
                     <option value="500">Neapolitan</option>
                     <option value="1000">Detroit</option>
                     <option value="500">BBQ Steak</option>
                     <option value="400">St Louis</option>
                     <option value="500">Hawaiian</option>
-                    </select>
+                    </select> -->
                     <label class="pizza-label" for="sizes">Chose your preferred Size:</label>
-                    <select id="sizes" class="custom-select custom-select-md mb-3" required="">
-                    <option value="500">Small</option>
-                    <option value="700">Medium</option>
-                    <option value="1100">Large</option>
+                    <select id="sizes" class="custom-select custom-select-md mb-3 pizza-option" required="">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
                     </select>
                     <label class="pizza-label" for="crusts">Choose your favorite Crust:</label>
-                    <select id="crusts" class="custom-select custom-select-md mb-3" required="">
-                    <option value="200">Thin Crust @ Ksh. 100</option>
-                    <option value="250">Thick Crust @ Ksh. 150</option>
-                    <option value="380">FlatBread Crust @ sh. 180</option>
-                    <option value="350">Custom Crust @ sh. 280</option>
+                    <select id="crusts" class="custom-select custom-select-md mb-3 pizza-option" required="">
+                    <option value="thincrust">Thin Crust @ Ksh. 100</option>
+                    <option value="thickcrust">Thick Crust @ Ksh. 150</option>
+                    <option value="flatbread">FlatBread Crust @ sh. 180</option>
+                    <option value="custom">Custom Crust @ sh. 280</option>
                     </select>
-                    <label class="pizza-label" for="toppings">Select Your favourite Toppings</label>
-                    <select id="toppings" class="custom-select custom-select-md mb-3" required="">
-                    <option value="100">Tomato</option>
-                    <option value="100">Onions</option>
-                    <option value="100">Mushroom</option>
-                    <option value="150">Olives</option>
-                    <option value="150">Sausage</option>
-                    <option value="200">Beef</option>
-                    <option value="200">Chicken</option>
-                    </select>
-                    <label class="pizza-label" for="number">No. of Pizzas</label>
-                    <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" max="10" required=""> <br><br>
-                    <button type="submit" class="btn btn-danger checkout" id="order">Order</button>
+                    <label class="pizza-label" for="toppings">Select Your favourite Toppings</label><br>
+                    <div class="card-form">
+                    <div id="toppings"  class="card-body">
+                    <input type="checkbox" id="mushroom" name="mushroom" value="mushroom">
+                    <label for="mushroom" class="pizza-options">mushroom</label><br>
+                    <input type="checkbox" id="beef" name="beef" value="beef">
+                    <label for="beef" class="pizza-options">beef</label><br>
+                    <input type="checkbox" id="chicken" name="chicken" value="chicken">
+                    <label for="chicken" class="pizza-options">chicken</label><br>
+                    </div>
+                    </div> <br><br>
+                    <!-- <label class="pizza-label" for="number">No. of Pizzas</label>
+                    <input type="number" class="form-control pizza-option" id="number" placeholder="Number of pizzas" min="1" max="10" required=""> <br><br> -->
+
+                    <button type="submit" class="btn btn-success checkout" id="order-button">Order</button>
+                </div>
+                    <div id="card-order" class="card">
+                        <!-- <div class="card-f"> -->
+                            <div class="cart-section">
+                            <div class="col-md-6">
+                                <p>Your order items in the cart <strong>:</strong><button class="btn-success btn ml-2" value="0" id="quantity" >0</button></i></p>
+                                <div id="cart">
+                                    <img src="https://bit.ly/2VCE2ru" alt="" width="150" height="120"> <br><br><br><br>
+                                    <!-- <p>There are no items in the cart</p> -->
+                                </div><br><br><br><br><br>
+                                <div id="checkout" class="checkout">
+                                    <button class="btn-success btn m-4" data-toggle="modal" data-target="#exampleModalCenter" id="gettotal">Checkout</button>
+                                <table id="ordered-options">
+                                    <tr>
+                                      <td>Size</td>
+                                      <td>Crust</td>
+                                      <td>Toppings</td>
+                                      <td>Total Price</td>
+                                    </tr>
+                                  </table>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div
+                    class="modal fade"
+                    id="exampleModalCenter"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="exampleModalCenterTitle"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h3 class="modal-title" id="exampleModalLongTitle">
+                            Confirm the price
+                          </h3>
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p>
+                            Amount you are to pay for your order is ksh
+                            <span id="money" style="color: red"></span>
+                          </p>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            id="myModel"
+                            data-dismiss="modal"
+                          >
+                            Confirm checkout
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
              </form>
             </div>
             </div>
@@ -140,5 +212,11 @@
         </div>
     </div>
 </div>
+<script
+src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+crossorigin="anonymous"
+></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
