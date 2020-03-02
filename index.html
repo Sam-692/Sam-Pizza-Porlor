@@ -23,7 +23,7 @@
                 </ul>
             </nav> <br><br><br><br>
             <div class="pizza-name">
-                <h1 id="pizza-name-h1">Manger Une Pizza</h1><br>
+                <h1 id="pizza-name-h1">Sam's pizza porlor</h1><br>
                 <p id="state">We give you what you want</p>
             </div>
         </div>
@@ -100,118 +100,50 @@
               <div class="row">
                   <div class="col-md-6">
               <!-- <div class="col-sm-8 order-overlay text-center"> -->
-                <form id="order" class="text-center">
-                 <label class="pizza-label" for="type">Pick your pizza Flavour:</label>
-                    <!-- <select id="" class="custom-select custom-select-md mb-3 pizza-option" required="">
-                    <option value="500">Neapolitan</option>
-                    <option value="1000">Detroit</option>
-                    <option value="500">BBQ Steak</option>
-                    <option value="400">St Louis</option>
-                    <option value="500">Hawaiian</option>
-                    </select> -->
-                    <label class="pizza-label" for="sizes">Chose your preferred Size:</label>
-                    <select id="sizes" class="custom-select custom-select-md mb-3 pizza-option" required="">
-                    <option value="small">Small</option>
-                    <option value="medium">Medium</option>
-                    <option value="large">Large</option>
-                    </select>
-                    <label class="pizza-label" for="crusts">Choose your favorite Crust:</label>
-                    <select id="crusts" class="custom-select custom-select-md mb-3 pizza-option" required="">
-                    <option value="thincrust">Thin Crust @ Ksh. 100</option>
-                    <option value="thickcrust">Thick Crust @ Ksh. 150</option>
-                    <option value="flatbread">FlatBread Crust @ sh. 180</option>
-                    <option value="custom">Custom Crust @ sh. 280</option>
-                    </select>
-                    <label class="pizza-label" for="toppings">Select Your favourite Toppings</label><br>
-                    <div class="card-form">
-                    <div id="toppings"  class="card-body">
-                    <input type="checkbox" id="mushroom" name="mushroom" value="mushroom">
-                    <label for="mushroom" class="pizza-options">mushroom</label><br>
-                    <input type="checkbox" id="beef" name="beef" value="beef">
-                    <label for="beef" class="pizza-options">beef</label><br>
-                    <input type="checkbox" id="chicken" name="chicken" value="chicken">
-                    <label for="chicken" class="pizza-options">chicken</label><br>
-                    </div>
-                    </div> <br><br>
-                    <!-- <label class="pizza-label" for="number">No. of Pizzas</label>
-                    <input type="number" class="form-control pizza-option" id="number" placeholder="Number of pizzas" min="1" max="10" required=""> <br><br> -->
+  
+<form class="form-group">
+    <select class="form-control" id="types" required>
+      <option>SELECT TYPE</option>
+      <option value="350">FOUR SEASONS</option>
+      <option value="400">BEEF STEAK & MUSHROOM</option>
+      <option value="450">CLASSIC MARGHERITA</option>
+      <option value="500">SWEET CHILLICHICKEN</option>
+      <option value="550">SPICY CHICKEN</option>
+      <option value="600">SWEET & SOUR CHICKEN</option>
+    </select>
 
-                    <button type="submit" class="btn btn-success checkout" id="order-button">Order</button>
-                </div>
-                    <div id="card-order" class="card">
-                        <!-- <div class="card-f"> -->
-                            <div class="cart-section">
-                            <div class="col-md-6">
-                                <p>Your order items in the cart <strong>:</strong><button class="btn-success btn ml-2" value="0" id="quantity" >0</button></i></p>
-                                <div id="cart">
-                                    <img src="https://bit.ly/2VCE2ru" alt="" width="150" height="120"> <br><br><br><br>
-                                    <!-- <p>There are no items in the cart</p> -->
-                                </div><br><br><br><br><br>
-                                <div id="checkout" class="checkout">
-                                    <button class="btn-success btn m-4" data-toggle="modal" data-target="#exampleModalCenter" id="gettotal">Checkout</button>
-                                <table id="ordered-options">
-                                    <tr>
-                                      <td>Size</td>
-                                      <td>Crust</td>
-                                      <td>Toppings</td>
-                                      <td>Total Price</td>
-                                    </tr>
-                                  </table>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <div
-                    class="modal fade"
-                    id="exampleModalCenter"
-                    tabindex="-1"
-                    role="dialog"
-                    aria-labelledby="exampleModalCenterTitle"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h3 class="modal-title" id="exampleModalLongTitle">
-                            Confirm the price
-                          </h3>
-                          <button
-                            type="button"
-                            class="close"
-                            data-dismiss="modal"
-                            aria-label="Close"
-                          >
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          <p>
-                            Amount you are to pay for your order is ksh
-                            <span id="money" style="color: red"></span>
-                          </p>
-                        </div>
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary"
-                            id="myModel"
-                            data-dismiss="modal"
-                          >
-                            Confirm checkout
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-             </form>
-            </div>
-            </div>
+    <div class="pizza form-group"> <br><br><br>
+          <select class="form-control" id="size" required>
+            <option>Select size</option>
+            <option value="1200">large --- 1200ksh</option>
+            <option value="800">small --- 800ksh</option>
+            <option value="1000">medium --- 1000ksh</option>
+            <option value="1400">medium --- 1400ksh</option>
+          </select><br><br>
         </div>
-        </div>
+         <select class="form-control" id="crust" required>
+            <option>Select Crust</option>
+            <option value="50">Stuffed --- 50ksh</option>
+            <option value="50">Crispy --- 50ksh</option>
+            <option value="50">Glutter free --- 50ksh</option>
+          </select><br><br>
+        </div> 
+          <select class="form-control" id="topping" required>
+            <option>Select Topping</option>
+            <option value="50">Pepperon --- 50ksh</option>
+            <option value="50">Onion --- 50ksh</option>
+            <option value="50">Bacon --- 50ksh</option>
+          </select><br><br>
+        </div><br><br>
+          <input type="number" class="form-control" name="number" id="number" placeholder="Number of Pizza"/>
+        </div> <br><br>
+        <div class="pizza button">
+            <button type="submit" onclick="getPizza()" class="btn btn-danger">checkout</button>
+          </div>
+      </div>
+      </div>
     </div>
-</div>
+  </form>
 <script
 src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
